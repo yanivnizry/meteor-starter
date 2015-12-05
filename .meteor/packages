@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-coffeescript
 less
 accounts-base
 accounts-password
@@ -30,7 +29,7 @@ spiderable
 accounts-facebook
 accounts-google
 accounts-twitter
-bootstrap
+twbs:bootstrap
 accounts-ui
 jparker:gravatar
 tap:i18n
