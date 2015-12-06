@@ -12,7 +12,6 @@ Package.onUse(function(api) {
 
   api.use(
   	[
-  	  'less@2.5.1',
       'templating',
 	    'aldeed:autoform@4.1.0 || 5.1.2'
   	],

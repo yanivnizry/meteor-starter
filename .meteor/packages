@@ -18,9 +18,9 @@ aldeed:template-extension
 cfs:graphicsmagick
 yogiben:helpers
 iron:router
-#yogiben:autoform-modals
+yogiben:autoform-modals
 yogiben:pretty-email
-#yogiben:autoform-file
+yogiben:autoform-file
 yogiben:autoform-map
 #multiply:iron-router-progress
 manuelschoebel:ms-seo
@@ -29,7 +29,7 @@ accounts-facebook
 accounts-google
 accounts-twitter
 twbs:bootstrap
-#accounts-ui
+accounts-ui
 jparker:gravatar
 tap:i18n
 useraccounts:bootstrap
@@ -50,7 +50,7 @@ natestrauser:animate-css
 meteorhacks:subs-manager
 fastclick
 notifications
-#yogiben:admin
+yogiben:admin
 timmyg:wow
 tsega:skrollr
 utilities:avatar

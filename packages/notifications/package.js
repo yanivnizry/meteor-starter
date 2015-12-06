@@ -12,7 +12,7 @@ Package.onUse(function(api) {
   api.use(
       [
         'templating',
-        'less',
+        'less@2.5.1 || 1.0.4',
         'tracker',
         'iron:router@1.0.0',
         'mrt:moment@2.8.1',

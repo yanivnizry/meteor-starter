@@ -1,4 +1,4 @@
-this.Config = {
+Config = {
   name: 'My App',
   title: function() {
     return TAPi18n.__('configTitle');
