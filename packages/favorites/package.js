@@ -11,6 +11,7 @@ Package.onUse(function(api) {
 
   api.use(
   	[
+      'mongo',
       'templating',
 	    'aldeed:autoform@4.0.2 || 5.1.2'
 

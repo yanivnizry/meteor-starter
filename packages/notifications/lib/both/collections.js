@@ -1,6 +1,6 @@
 var NotificationsSchema;
 
-this.Notifications = new Meteor.Collection('notifications');
+this.Notifications = new Mongo.Collection('notifications');
 
 Notifications["new"] = function(doc) {
   if (typeof doc.owner === 'undefined') {

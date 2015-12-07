@@ -1,6 +1,6 @@
 var CommentsSchema;
 
-Comments = new Meteor.Collection('comments');
+Comments = new Mongo.Collection('comments');
 
 CommentsSchema = new SimpleSchema({
   doc: {

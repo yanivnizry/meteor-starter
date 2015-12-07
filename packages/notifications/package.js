@@ -11,6 +11,7 @@ Package.onUse(function(api) {
   
   api.use(
       [
+        'mongo',
         'templating',
         'less@2.5.1 || 1.0.4',
         'tracker',

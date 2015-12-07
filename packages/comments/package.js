@@ -8,10 +8,11 @@ Package.describe({
 both = ['client','server']
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0');
+  api.versionsFrom('METEOR@1.2');
 
   api.use(
   	[
+      'mongo',
       'templating',
 	    'aldeed:autoform@4.1.0 || 5.1.2'
   	],
@@ -21,7 +22,7 @@ Package.onUse(function(api) {
   	[
   		'lib/both/collections.js'
   	],
-  	both)
+  	both);
 
    api.addFiles(
   	[
@@ -30,17 +31,18 @@ Package.onUse(function(api) {
       'lib/client/helpers.js',
   		'lib/client/autoform.js'
   	],
-  	'client')
+  	'client');
 
    api.addFiles(
   	[
   		'lib/server/allow.js',
   		'lib/server/publish.js'
   	],
-  	'server')
+  	'server');
+   api.export('Comments',both);
 
-   api.imply('aldeed:simple-schema')
-   api.imply('aldeed:collection2')
+   api.imply('aldeed:simple-schema');
+   api.imply('aldeed:collection2');
 
 
 

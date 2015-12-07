@@ -12,6 +12,7 @@ Package.onUse(function(api) {
 
 	api.use(
 		[
+		    'mongo',
 			'less@2.5.1 || 1.0.11',
 			'templating',
 			'yogiben:helpers@0.0.1'
