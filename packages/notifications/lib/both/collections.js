@@ -1,6 +1,6 @@
 var NotificationsSchema;
 
-this.Notifications = new Mongo.Collection('notifications');
+Notifications = new Mongo.Collection('notifications');
 
 Notifications["new"] = function(doc) {
   if (typeof doc.owner === 'undefined') {

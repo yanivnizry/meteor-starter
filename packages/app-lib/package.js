@@ -10,7 +10,8 @@ Package.onUse(function(api) {
     'es5-shim',
     'underscore',
     'check',
-    'simple:rest@0.2.3'
+    // 'simple:rest',
+    'tap:i18n',
   ]);
 
   // Collections
@@ -19,13 +20,14 @@ Package.onUse(function(api) {
     'aldeed:collection2@2.5.0',
     'dburles:collection-helpers@1.0.4',
     // 'denormalizer',
-    'mdg:validation-error'
+    'mdg:validation-error',
+    'reywood:publish-composite',
   ]);
 
   // Client-side libraries
   api.imply([
     'tracker',
-    'jquery',
+    //'jquery',
     'blaze-html-templates',
     // 'blaze-helpers',
     'reactive-dict',
@@ -37,20 +39,25 @@ Package.onUse(function(api) {
     'tsega:skrollr',
     'utilities:avatar',
     'jparker:gravatar',
+    'juliancwirko:s-alert',
+    'juliancwirko:s-alert-stackslide',
+    'templating',
   ]);
 
   // Routing
   api.imply([
-    'kadira:flow-router@2.7.0',
-    'kadira:blaze-layout@2.2.0',
-    'arillo:flow-router-helpers@0.4.5',
-    'zimme:active-route@2.3.0',
+    // 'kadira:flow-router@2.7.0',
+    // 'kadira:blaze-layout@2.2.0',
+    // 'arillo:flow-router-helpers@0.4.5',
+    // 'zimme:active-route@2.3.0',
+    'iron:router',
+    'zimme:iron-router-active',
   ]);
 
   // Mobile stuff
   api.imply([
     'mobile-experience',
-    'chriswessels:hammer@4.0.2'
+    'chriswessels:hammer'
   ]);
 
   // CSS
@@ -69,8 +76,8 @@ Package.onUse(function(api) {
   // Accounts
   api.imply([
     'accounts-password',
-    'useraccounts:unstyled@1.12.4',
-    'useraccounts:flow-routing@1.12.4',
+    //'useraccounts:unstyled',
+    //'useraccounts:flow-routing@1.12.4',
     // Required by the above. This version fixes https://github.com/softwarerero/meteor-accounts-t9n/issues/122
     // 'softwarerero:accounts-t9n@1.1.6',
     'accounts-facebook',
@@ -94,23 +101,27 @@ Package.onUse(function(api) {
 
   // DDP
   api.imply([
-    'mdg:validated-method@0.2.0',
-    'aldeed:simple-schema@1.4.0',
+    'mdg:validated-method',
+    'aldeed:simple-schema',
   ]);
   
   //Forms
   api.imply([
+    'aldeed:autoform',
+    // 'alanning:roles',
+    'aldeed:collection2',
+    'fortawesome:fontawesome',
+    'raix:handlebar-helpers',
     'yogiben:autoform-modals',
     'yogiben:pretty-email',
     'yogiben:autoform-file',
     'yogiben:autoform-map',
   ]);
   
-  //Files
+//seo
   api.imply([
-    'cfs:graphicsmagick',
-    'cfs:standard-packages',
-    'cfs:gridfs',
+    //'manuelschoebel:ms-seo',
+    'spiderable',
   ]);
   
 
@@ -163,21 +174,17 @@ yogiben:autoform-map
 #misc
 #multiply:iron-router-progress
 
-#seo
-manuelschoebel:ms-seo
-spiderable
+
 
 #twbs:bootstrap
 
 #language
-tap:i18n
 
 service-configuration
 yogiben:mixpanel
 juliancwirko:s-alert
 juliancwirko:s-alert-stackslide
 momentjs:moment
-zimme:iron-router-active
 user-thumbs
 comments
 favorites

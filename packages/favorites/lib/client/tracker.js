@@ -1,4 +1,5 @@
 Tracker.autorun(function() {
+    subs = new SubsManager();
   return subs.subscribe('myFavorites');
 });
 

@@ -27,6 +27,14 @@ Package.onUse(function(api) {
     'no_data.html',
     'not_found.html',
     'routes.js',
+    'home.html',
+    'home.import.less',
+    'home.js',
+    'index.html',
+    'account.html',
+    'account.js',
+    'i18n.js',
+    'router.js',
   ], 'client');
   
   api.addFiles([
@@ -34,12 +42,9 @@ Package.onUse(function(api) {
      'adminConfig.js',
      'accounts.js',
      'emails.js',
-     'i18n.js',
      'momentum.js',
      'oauth.js',
-     'router.js',
      'sAlert.js',
-     'seo.js',
      'NCSchemas.js',
      'utils.js',
   ], both );
@@ -50,4 +55,5 @@ Package.onUse(function(api) {
   api.addAssets([
     // 'img/logo-todos.svg',
   ], 'client');
+  api.export('Schemas');
 });

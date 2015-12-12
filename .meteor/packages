@@ -12,7 +12,6 @@ jquery        # Necessary until https://github.com/meteor-useraccounts/core/pull
 east5th:package-scan
 audit-argument-checks # needs to be the app level due to test packages failing
 
-
 #standard-minifiers
 #mobile-experience
 #mongo

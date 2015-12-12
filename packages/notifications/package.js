@@ -11,13 +11,7 @@ Package.onUse(function(api) {
   
   api.use(
       [
-        'mongo',
-        'templating',
-        'less@2.5.1 || 1.0.4',
-        'tracker',
-        'iron:router@1.0.0',
-        'mrt:moment@2.8.1',
-        'aldeed:autoform@4.0.2 || 5.1.2'
+      'app-lib',
       ],
       both);
 

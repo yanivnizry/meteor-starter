@@ -1,6 +1,6 @@
 var onAfterAction;
 
-this.subs = new SubsManager();
+subs = new SubsManager();
 
 Router.configure({
   layoutTemplate: "masterLayout",

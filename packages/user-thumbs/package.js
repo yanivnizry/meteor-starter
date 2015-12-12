@@ -8,7 +8,7 @@ Package.describe({
 	 both = ['client','server'];
 
 Package.onUse(function(api) {
-	api.versionsFrom('METEOR@0.9.2.2');
+	api.versionsFrom('METEOR@1.2');
 
 	api.use(
 		[
@@ -30,10 +30,11 @@ Package.onUse(function(api) {
 	 api.addFiles(
 		[
       		'lib/both/attachments.js',
-      		'lib/both/profile_pictures.js',
       		'lib/both/users.js',
-      		'lib/both/profile.js',
-      		'lib/both/profile.html',
+      		// 'lib/both/profile.js',
+      		// 'lib/both/profile.html',
 		],
 		both );
+		
+		api.export(['Attachments','ProfilePictures']);
 });

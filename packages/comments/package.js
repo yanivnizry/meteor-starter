@@ -24,10 +24,10 @@ Package.onUse(function(api) {
 
    api.addFiles(
   	[
-  		'lib/client/templates.html',
+  	  'lib/client/templates.html',
       'lib/client/templates.js',
       'lib/client/helpers.js',
-  		'lib/client/autoform.js'
+  	  'lib/client/autoform.js'
   	],
   	'client');
 
