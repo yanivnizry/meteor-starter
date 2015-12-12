@@ -12,9 +12,7 @@ Package.onUse(function(api) {
 
   api.use(
   	[
-      'mongo',
-      'templating',
-	    'aldeed:autoform@4.1.0 || 5.1.2'
+  	  'app-lib',
   	],
   	both);
 

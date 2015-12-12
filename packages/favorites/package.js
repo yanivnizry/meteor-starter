@@ -28,7 +28,8 @@ Package.onUse(function(api) {
   	[
   		'lib/client/templates.html',
       'lib/client/templates.js',
-  		'lib/client/helpers.js'
+  		'lib/client/helpers.js',
+  		'lib/client/tracker.js',
   	],
   	'client')
 

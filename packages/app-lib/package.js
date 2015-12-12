@@ -18,7 +18,7 @@ Package.onUse(function(api) {
     'mongo',
     'aldeed:collection2@2.5.0',
     'dburles:collection-helpers@1.0.4',
-    'denormalizer',
+    // 'denormalizer',
     'mdg:validation-error'
   ]);
 
@@ -27,12 +27,16 @@ Package.onUse(function(api) {
     'tracker',
     'jquery',
     'blaze-html-templates',
-    'blaze-helpers',
+    // 'blaze-helpers',
     'reactive-dict',
     'reactive-var',
     'session',
     'aldeed:template-extension@3.4.3',
-    'percolate:momentum@0.7.2'
+    'percolate:momentum@0.7.2',
+    'percolate:momentum-iron-router',
+    'tsega:skrollr',
+    'utilities:avatar',
+    'jparker:gravatar',
   ]);
 
   // Routing
@@ -52,12 +56,14 @@ Package.onUse(function(api) {
   // CSS
   api.imply([
     'less',
-    'less-imports',
+    // 'less-imports',
+    'natestrauser:animate-css',
+    'timmyg:wow',
   ]);
 
   // Testing setup
   api.imply([
-    'factory',
+    // 'factory',
   ]);
 
   // Accounts
@@ -66,7 +72,16 @@ Package.onUse(function(api) {
     'useraccounts:unstyled@1.12.4',
     'useraccounts:flow-routing@1.12.4',
     // Required by the above. This version fixes https://github.com/softwarerero/meteor-accounts-t9n/issues/122
-    'softwarerero:accounts-t9n@1.1.6'
+    // 'softwarerero:accounts-t9n@1.1.6',
+    'accounts-facebook',
+    'accounts-google',
+    'accounts-twitter',
+    'accounts-base',
+    'accounts-password',
+    'accounts-ui',
+    'useraccounts:bootstrap',
+    'useraccounts:iron-routing',
+    'meteorhacks:subs-manager',
   ]);
 
   // Security
@@ -74,7 +89,7 @@ Package.onUse(function(api) {
     'ddp-rate-limiter',
 
     // Production only package with some more security
-    'app-prod-security',
+    // 'app-prod-security',
   ]);
 
   // DDP
@@ -82,6 +97,23 @@ Package.onUse(function(api) {
     'mdg:validated-method@0.2.0',
     'aldeed:simple-schema@1.4.0',
   ]);
+  
+  //Forms
+  api.imply([
+    'yogiben:autoform-modals',
+    'yogiben:pretty-email',
+    'yogiben:autoform-file',
+    'yogiben:autoform-map',
+  ]);
+  
+  //Files
+  api.imply([
+    'cfs:graphicsmagick',
+    'cfs:standard-packages',
+    'cfs:gridfs',
+  ]);
+  
+
 });
 
 
@@ -97,38 +129,49 @@ random
 ejson
 spacebars
 check
-useraccounts:iron-routing
+#useraccounts:iron-routing
 less
 
-accounts-base
-accounts-password
+#accounts
+#accounts-facebook
+#accounts-google
+#accounts-twitter
+#accounts-base
+#accounts-password
+#accounts-ui
+#useraccounts:bootstrap
+
+#forms
 aldeed:autoform@5.1.2
 alanning:roles
 aldeed:collection2
 aldeed:simple-schema
 fortawesome:fontawesome
 raix:handlebar-helpers
-cfs:standard-packages
-cfs:gridfs
+
 aldeed:template-extension
-cfs:graphicsmagick
+
 yogiben:helpers
 iron:router
+
+#forms
 yogiben:autoform-modals
 yogiben:pretty-email
 yogiben:autoform-file
 yogiben:autoform-map
+
+#misc
 #multiply:iron-router-progress
+
+#seo
 manuelschoebel:ms-seo
 spiderable
-accounts-facebook
-accounts-google
-accounts-twitter
-twbs:bootstrap
-accounts-ui
-jparker:gravatar
+
+#twbs:bootstrap
+
+#language
 tap:i18n
-useraccounts:bootstrap
+
 service-configuration
 yogiben:mixpanel
 juliancwirko:s-alert
@@ -138,16 +181,28 @@ zimme:iron-router-active
 user-thumbs
 comments
 favorites
+
+#collections
 dburles:collection-helpers
 reywood:publish-composite
-percolate:momentum-iron-router
-percolate:momentum
-natestrauser:animate-css
-meteorhacks:subs-manager
+
+#animation
+#percolate:momentum-iron-router
+#percolate:momentum
+#natestrauser:animate-css
+#timmyg:wow
+#tsega:skrollr
+#utilities:avatar
+#jparker:gravatar
+
+#mobile
 fastclick
+
+
 notifications
 yogiben:admin
-timmyg:wow
-tsega:skrollr
-utilities:avatar
+
+
+#users
+
 */

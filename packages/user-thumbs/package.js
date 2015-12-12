@@ -5,17 +5,15 @@ Package.describe({
 	git: "http://github.com/yogiben/meteor-user-helpers.git"
 });
 
-both = ['client','server']
+	 both = ['client','server'];
 
 Package.onUse(function(api) {
 	api.versionsFrom('METEOR@0.9.2.2');
 
 	api.use(
 		[
-		    'mongo',
-			'less@2.5.1 || 1.0.11',
-			'templating',
-			'yogiben:helpers@0.0.1'
+		  'app-lib',
+
 		],
 		both);
 
@@ -25,8 +23,17 @@ Package.onUse(function(api) {
 			'lib/client/templates.js',
 			'lib/client/helpers.js',
 			'lib/client/templates.less',
-      'lib/client/utils.js'
+      		'lib/client/utils.js'
 		],
-		'client')
-
+		'client');
+		
+	 api.addFiles(
+		[
+      		'lib/both/attachments.js',
+      		'lib/both/profile_pictures.js',
+      		'lib/both/users.js',
+      		'lib/both/profile.js',
+      		'lib/both/profile.html',
+		],
+		both );
 });

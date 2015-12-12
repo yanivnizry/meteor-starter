@@ -4,6 +4,7 @@ Package.describe({
   summary: 'Entry point for the app',
   documentation: null,
 });
+var both = ['client','server'];
 
 Package.onUse(function(api) {
   api.use('app-lib');
@@ -16,22 +17,37 @@ Package.onUse(function(api) {
   ]);
 
   api.addFiles([
-    'head.html',
+    'admin.html',
     'loading.html',
-    'loading.less',
-    'app-not-found.html',
-    'app-not-found.less',
-    'app-body.html',
-    'app-body.js',
-    'root-redirector.html',
-    'root-redirector.js',
-    'routes.js'
+    'master_layout.html',
+    'home_layout.html',
+    'footer.html',
+    'navbar.html',
+    // 'app-body.js',
+    'no_data.html',
+    'not_found.html',
+    'routes.js',
   ], 'client');
-
+  
+  api.addFiles([
+     'config.js',
+     'adminConfig.js',
+     'accounts.js',
+     'emails.js',
+     'i18n.js',
+     'momentum.js',
+     'oauth.js',
+     'router.js',
+     'sAlert.js',
+     'seo.js',
+     'NCSchemas.js',
+     'utils.js',
+  ], both );
+  
   api.addFiles([
   ], 'server');
 
   api.addAssets([
-    'img/logo-todos.svg',
+    // 'img/logo-todos.svg',
   ], 'client');
 });
