@@ -17,8 +17,8 @@ Package.onUse(function(api) {
   // Collections
   api.imply([
     'mongo',
-    'aldeed:collection2@2.5.0',
-    'dburles:collection-helpers@1.0.4',
+    'aldeed:collection2',
+    'dburles:collection-helpers',
     // 'denormalizer',
     'mdg:validation-error',
     'reywood:publish-composite',
@@ -33,8 +33,8 @@ Package.onUse(function(api) {
     'reactive-dict',
     'reactive-var',
     'session',
-    'aldeed:template-extension@3.4.3',
-    'percolate:momentum@0.7.2',
+    'aldeed:template-extension',
+    'percolate:momentum',
     'percolate:momentum-iron-router',
     'tsega:skrollr',
     'utilities:avatar',

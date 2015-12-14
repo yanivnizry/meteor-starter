@@ -37,7 +37,7 @@ Package.onUse(function(api) {
   		'lib/server/publish.js'
   	],
   	'server');
-   api.export('Comments',both);
+   api.export('Posts',both);
 
    api.imply('aldeed:simple-schema');
    api.imply('aldeed:collection2');

@@ -20,7 +20,7 @@ Package.onUse(function(api) {
   	[
   		'lib/both/collections.js'
   	],
-  	both)
+  	both);
 
    api.addFiles(
   	[
@@ -29,14 +29,16 @@ Package.onUse(function(api) {
   		'lib/client/helpers.js',
   		'lib/client/tracker.js',
   	],
-  	'client')
+  	'client');
 
    api.addFiles(
   	[
   		'lib/server/allow.js',
   		'lib/server/publish.js'
   	],
-  	'server')
+  	'server');
+  	
+  	api.export('Favorites');
 
 
 

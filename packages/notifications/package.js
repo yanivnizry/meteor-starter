@@ -39,4 +39,6 @@ Package.onUse(function(api) {
         'lib/server/methods.js'
       ],
       'server');
+      
+      api.export('Notifications');
 });

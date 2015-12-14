@@ -24,7 +24,7 @@ audit-argument-checks # needs to be the app level due to test packages failing
 #ejson
 #spacebars
 #check
-#useraccounts:iron-routing
+useraccounts:iron-routing
 #less    
 
 #accounts-base
@@ -41,7 +41,7 @@ audit-argument-checks # needs to be the app level due to test packages failing
 #aldeed:template-extension
 #cfs:graphicsmagick
 #yogiben:helpers
-#iron:router
+iron:router
 #yogiben:autoform-modals
 #yogiben:pretty-email
 #yogiben:autoform-file
@@ -70,10 +70,9 @@ audit-argument-checks # needs to be the app level due to test packages failing
 #percolate:momentum-iron-router
 #percolate:momentum
 #natestrauser:animate-css
-#meteorhacks:subs-manager
+meteorhacks:subs-manager
 #fastclick
 #yogiben:admin
 #timmyg:wow
 #tsega:skrollr
 #utilities:avatar
-

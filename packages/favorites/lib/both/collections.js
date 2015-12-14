@@ -1,6 +1,6 @@
 var FavoritesSchemas;
 
-this.Favorites = new Mongo.Collection('favorites');
+Favorites = new Mongo.Collection('favorites');
 
 FavoritesSchemas = new SimpleSchema({
   doc: {
