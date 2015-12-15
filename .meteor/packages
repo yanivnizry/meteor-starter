@@ -30,7 +30,7 @@ useraccounts:iron-routing
 #accounts-base
 #accounts-password
 
-#aldeed:autoform@5.1.2
+#aldeed:autoform
 #alanning:roles
 #aldeed:collection2
 #aldeed:simple-schema
@@ -76,3 +76,6 @@ meteorhacks:subs-manager
 #timmyg:wow
 #tsega:skrollr
 #utilities:avatar
+meteorhacks:kadira
+meteorhacks:zones
+meteorhacks:kadira-profiler
