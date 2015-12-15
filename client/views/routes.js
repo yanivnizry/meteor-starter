@@ -1,3 +1,5 @@
+var subs = new SubsManager();
+
 Router.map(function() {
   this.route("home", {
     path: "/",

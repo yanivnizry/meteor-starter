@@ -10,28 +10,28 @@ Package.onUse(function(api) {
   api.use('app-lib');
 
   api.use([
-    // 'comments',
-    // 'favorites',
-    // 'notifications',
-    // 'user-thumbs',
+    'comments',
+    'favorites',
+    'notifications',
+    'user-thumbs',
   ]);
 
   api.addFiles([
-    'lib/client/admin.html',
-    'lib/client/loading.html',
+    // 'lib/client/admin.html',
+    // 'lib/client/loading.html',
     // 'lib/client/master_layout.html',
     // 'lib/client/home_layout.html',
-    'lib/client/footer.html',
-    'lib/client/navbar.html',
-    'lib/client/no_data.html',
-    'lib/client/not_found.html',
-    'lib/client/routes.js',
+    // 'lib/client/footer.html',
+    // 'lib/client/navbar.html',
+    // 'lib/client/no_data.html',
+    // 'lib/client/not_found.html',
+    // 'lib/client/routes.js',
     // 'lib/client/home.html',
     // 'lib/client/home.import.less',
     // 'lib/client/home.js',
-    'lib/client/account.html',
-    'lib/client/account.js',
-    'lib/client/i18n.js',
+    // 'lib/client/account.html',
+    // 'lib/client/account.js',
+    // 'lib/client/i18n.js',
     // 'lib/client/router.js',
   ], 'client');
   
@@ -53,5 +53,5 @@ Package.onUse(function(api) {
   api.addAssets([
     // 'img/logo-todos.svg',
   ], 'client');
-  api.export('Schemas');
+  api.export(['Schemas','Config','NCSchemas','AdminConfig','Utils','AccountsTemplates']);
 });
